@@ -1,8 +1,7 @@
 import React from 'react'
 
-module.exports = React.createClass({
-    displayName: "Hello",
-    render: function(){
-        return <div>Hello React</div>
+export default class Hello extends React.Component {
+    render() {
+        return <div>Hello React. I am Ben.</div>
     }
-})
+}

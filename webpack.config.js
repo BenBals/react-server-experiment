@@ -15,6 +15,14 @@ module.exports = {
         // publicPath: 'http://localhost:8090/assets'
     },
     module: {
+        preLoaders: [
+            {
+                test: /\.jsx?$/,
+                loaders: ['eslint'],
+                include: path.resolve(__dirname, 'src')
+            }
+        ],
+        
         loaders: [
             {
                 //tell webpack to use jsx-loader for all *.jsx files
@@ -42,15 +50,3 @@ module.exports = {
         extensions: ['', '.js', '.jsx']
     }
 }
-
-var common = {
-  module: {
-    preLoaders: [
-      {
-        test: /\.jsx?$/,
-        loaders: ['eslint'],
-        include: path.resolve(__dirname, 'src')
-      }
-    ]
-  },
-};
