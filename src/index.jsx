@@ -1,3 +1,3 @@
-import renderReact from './react/ReactBase'
+import renderReduxSimpleDemo from './redux/basicDemo'
 
-renderReact()
+renderReduxSimpleDemo()

@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Hello from './Hello'
 
-module.exports = () => ReactDOM.render(<Hello />, document.getElementById('content'))
+import Counter from './Counter'
+
+export default (counterValue) => ReactDOM.render(<Counter value={counterValue}/>, document.getElementById('content'))
