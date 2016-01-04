@@ -5,7 +5,7 @@ module.exports = {
     entry: [
         'webpack/hot/dev-server',
         'webpack-dev-server/client?http://localhost:8080',
-        path.resolve(__dirname, 'src/app/index.jsx')
+        path.resolve(__dirname, 'src/index.jsx')
     ],
     output: {
         path: path.resolve(__dirname, 'build'),
@@ -22,7 +22,7 @@ module.exports = {
                 include: path.resolve(__dirname, 'src')
             }
         ],
-        
+
         loaders: [
             {
                 //tell webpack to use jsx-loader for all *.jsx files
